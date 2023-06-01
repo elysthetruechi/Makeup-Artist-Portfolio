@@ -620,9 +620,8 @@ html{
     color: white;
     font-size: 15px;
 }
-.email{
-
-}
+/*.email{
+}*/
 .email .email-content{
     background:#fff;
         display: inline-flex;
