@@ -188,7 +188,6 @@ border: 20px solid #333333;
 }
 .gallery{
     font-family:'Playfair Display', serif;
-    background: #111;
 }
 .gallery .title{
     position: relative;
@@ -219,7 +218,7 @@ border: 20px solid #333333;
     background:#fff;
     transform:translateX(-50%);
 }
-.gallery .gallery-content {
+/*.gallery .gallery-content {
     display: flex;
     flex-wrap: wrap;
     align-items:center;
@@ -233,11 +232,20 @@ border: 20px solid #333333;
     /*flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;*/
+    justify-content: space-between;
+}*/
+.grid{
+    display: grid;
+grid-template-columns: repeat(3,minmax(0,1fr));
+gap: 20px;
 }
-.item{
+
+.grid img{
     border: 3px solid red;
+    grid-column:span 1 / span 1;
+    height: 270px;
 }
+
 .gallery .gallery-content .grid img{
    width: 270px;
    /*object-fit: cover;*/
@@ -256,7 +264,10 @@ border: 20px solid #333333;
     border: 2px solid #2B7A78;
     transition: all 0.3s ease;
 }
-
+.imggg{
+    grid-template-rows:repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
 .services{
     font-family:'Playfair Display', serif;
 }
@@ -299,30 +310,20 @@ border: 20px solid #333333;
     gap: 65px;
 }
 .wrapper{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap:0px;
-    grid-row-gap: 10px;
-}
+ display: grid;
+ grid-template-columns: 1.7fr 1fr;
+ grid-template-rows: 1fr 1fr;
+gap: 6px 4px;
+grid-auto-flow: column dense;
+grid-template-areas:
+ ". ."
+ ". .";
+ border: 5px solid red;
+      }
+      
 /*.wrap{
 }*/
-.wrap1{
-    width:600px;
-}
-.wrap2{
-    width:350px;
-}
-.wrap3{
-    width:350px;
-    height: auto;
-}
-.wrap4{
-width: 350px;
-}
-.wrap4 img{
-    width: 500px;
-    object-fit: fill;
-}
+
 .work img{
     width: 480px;
     object-fit: cover;
@@ -461,106 +462,28 @@ margin-left:55%;
     flex-wrap: wrap;
     align-items:center;
     justify-content: space-between;
-    border: 1px solid #2B7A78;
+    background: red;
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
+.contact .contact-content .main{
+    width: 60%;
+    margin: 50px auto;
+    border: 1px solid red;
 }
-
-.contact .contact-content  .left{
-    background: #2B7A78;
-}
-.contact .contact-content .left .text{
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 10px;
-color: #fff;
-}
-.contact .contact-content .right .text{
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 10px;
-
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
+.contact-box{
+    background: #fff;
     display: flex;
-    height: 65px;
-    align-items:center;
 }
-.contact .contact-content .row .info{
-    margin-left: 20px;
-    color: #fff;
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
 }
-.contact .contact-content .row i{
-font-size: 20px;
-color: #fff;
-}
-.contact .right form .fields{
-display: flex;
-}
-.contact .right form .fields,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom:15px;
-}
-.contact .right form .field input{
-    height:100%;
-    width: 100%;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 10px;
-    font-size: 17px;
-    font-family:'Playfair Display', serif;
-}
-.contact .right form .textarea textarea{
-    height:100%;
-    width: 100%;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 10px;
-    font-size: 17px;
-    font-family:'Playfair Display', serif;
-}
-.contact .right form .textarea {
-    height: 80px;
-    width: 100px;
-}
-.contact .right form .textarea textarea{
-    padding-top:10px;
-    resize: none;
-}
-.contact .right form .button{
-    width:170px;
-    height: 47px;
-}
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid #2B7A78;
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
     background: #2B7A78;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    color:#fff ;
 }
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;
-}
-.contact .right form .textarea{
-    height:80px
-}
-.contact .right form .button button:hover{
-    color:#2B7A78;
-    background:black;
-    font-size:25px ;
-}
+
 .touch{
 display: flex;
 flex-wrap: wrap;
@@ -631,8 +554,8 @@ html{
         width:40%;
         border: 3px solid #2B7A78;
         margin-left:30%;
-        padding: 5px;
-        border-radius: 8px;
+        padding:5px;
+        border-radius:8px;
 }
     .email.email-content .column{
         padding: 5px auto;
