@@ -185,14 +185,9 @@ section {
   font-family: "Playfair Display, serif";
   color: grey;
 }
-<<<<<<< HEAD
-.gallery{
-    font-family:'Playfair Display', serif;
-=======
 .gallery {
   font-family: "Playfair Display", serif;
   background: #111;
->>>>>>> 9a0f68cfe01b2088cf913677d92bab70395af660
 }
 .gallery .title {
   position: relative;
@@ -223,60 +218,6 @@ section {
   background: #fff;
   transform: translateX(-50%);
 }
-<<<<<<< HEAD
-/*.gallery .gallery-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:center;
-    justify-content: space-between;
-}
-.gallery .gallery-content .grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap:0px;
-    grid-row-gap: 0px;
-    /*flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-}*/
-.grid{
-    display: grid;
-grid-template-columns: repeat(3,minmax(0,1fr));
-gap: 20px;
-}
-
-.grid img{
-    border: 3px solid red;
-    grid-column:span 1 / span 1;
-    height: 270px;
-}
-
-.gallery .gallery-content .grid img{
-   width: 270px;
-   /*object-fit: cover;*/
-}
-.gallery .gallery-content a{
-    display: block;
-    margin: 50px auto;
-    text-align:center;
-    background: #2B7A78;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 32px;
-    border-radius: 6px;
-    margin-top: 20px;
-    height: 55px;
-    border: 2px solid #2B7A78;
-    transition: all 0.3s ease;
-}
-.imggg{
-    grid-template-rows:repeat(2, minmax(0, 1fr));
-    gap: 10px;
-}
-.services{
-    font-family:'Playfair Display', serif;
-=======
 .gallery .gallery-content {
   display: flex;
   flex-wrap: wrap;
@@ -294,7 +235,6 @@ gap: 20px;
     object-fit: cover;
     width: 100%;
     height: 450px;
->>>>>>> 9a0f68cfe01b2088cf913677d92bab70395af660
 }
 
 .gallery .gallery-content a {
@@ -353,30 +293,6 @@ gap: 20px;
   flex-wrap: wrap;
   gap: 65px;
 }
-<<<<<<< HEAD
-.wrapper{
- display: grid;
- grid-template-columns: 1.7fr 1fr;
- grid-template-rows: 1fr 1fr;
-gap: 6px 4px;
-grid-auto-flow: column dense;
-grid-template-areas:
- ". ."
- ". .";
- border: 5px solid red;
-      }
-      
-/*.wrap{
-}*/
-
-.work img{
-    width: 480px;
-    object-fit: cover;
-    border-radius: 10px;
-    display:block;
-    justify-content: space-between;
-    transition:transform 0.5s ;
-=======
 .wrapper {
   display: grid;
   grid-template-columns: auto auto;
@@ -409,7 +325,6 @@ grid-template-areas:
   display: block;
   justify-content: space-between;
   transition: transform 0.5s;
->>>>>>> 9a0f68cfe01b2088cf913677d92bab70395af660
 }
 .work {
   border-radius: 10px;
@@ -534,142 +449,105 @@ grid-template-areas:
   font-family: "Playfair Display", serif;
 }
 .contact .contact-content {
-<<<<<<< HEAD
-    display: flex;
-    flex-wrap: wrap;
-    align-items:center;
-    justify-content: space-between;
-    background: red;
-}
-.contact .contact-content .main{
-    width: 60%;
-    margin: 50px auto;
-    border: 1px solid red;
-}
-.contact-box{
-    background: #fff;
-    display: flex;
-}
-.contact-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
-}
-.contact-right{
-    flex-basis: 40%;
-    padding: 40px;
-    background: #2B7A78;
-    color:#fff ;
-}
-
-.touch{
-display: flex;
-flex-wrap: wrap;
-align-items:stretch;
-gap:0px;
-width: calc(100%);
-=======
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #2b7a78;
 }
-.contact .contact-content .column {
-  width: calc(50% - 30px);
+.contact .contact-content .main{
+  width: 60%;
+  margin: 50px auto;
+  border: 5px solid #2b7a78;
+}
+.contact-box{
+  background: #fff;
+  display: flex;
+}
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+.contact-left h3{
+  font-family:"Playfair Display", serif;
+  color: grey;
+  font-size: 20px;
+}
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px;
+  color: #fff;
+  background: #2b7a78;
+}
+.input-row{
+  display:block;
+  justify-content:space-between;
+  margin-bottom: 20px;
 }
 
-.contact .contact-content .left {
+.input-row .input-group{
+  flex-basis: 45%;
+  color:grey;
+}
+input{
+  width: 85%;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #2b7a78;
+  outline: none;
+  margin-top: 25px;
+  padding-bottom:5px;
+}
+button{
   background: #2b7a78;
-}
-.contact .contact-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.contact .contact-content .right .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.contact .contact-content .left .icons {
-  margin: 10px 0;
-}
-.contact .contact-content .row {
-  display: flex;
-  height: 65px;
-  align-items: center;
-}
-.contact .contact-content .row .info {
-  margin-left: 20px;
-  color: #fff;
-}
-.contact .contact-content .row i {
-  font-size: 20px;
-  color: #fff;
-}
-.contact .right form .fields {
-  display: flex;
-}
-.contact .right form .fields,
-.contact .right form .fields .field {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.contact .right form .field input {
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  outline: none;
-  padding: 0 10px;
-  font-size: 17px;
-  font-family: "Playfair Display", serif;
-}
-.contact .right form .textarea textarea {
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  outline: none;
-  padding: 0 10px;
-  font-size: 17px;
-  font-family: "Playfair Display", serif;
-}
-.contact .right form .textarea {
-  height: 80px;
+  display: block;
+  margin-left: 80px;
+  font-size: 15px;
   width: 100px;
+  height: 35px;
+  border:2px solid #2b7a78;
+  border-radius:6px;
+  outline: none;
+  color:#fff;
 }
-.contact .right form .textarea textarea {
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button {
-  width: 170px;
-  height: 47px;
-}
-.contact .right form .button button {
-  width: 100%;
-  height: 100%;
-  border: 2px solid #2b7a78;
-  background: #2b7a78;
+button:hover{
+  background: black;
   font-size: 20px;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  color: #2b7a78;
+  box-shadow: 0px 5px 15px 0px;
 }
-.contact .right form .name {
-  margin-right: 10px;
+.contact-right h3{
+  font-family:"Playfair Display", serif;
+  color:#fff;
+  font-size: 20px;
+  margin-bottom:15px;
 }
-.contact .right form .email {
+.contact-right .more{
+display: flex;
+flex-direction: column;
+align-items:justify;
+justify-content: flex-start;
+}
+.contact-right .more i{
+  font-size: 10px;
+  margin-left:10px 0;
+}
+.contact-right .more span{
   margin-left: 10px;
 }
-.contact .right form .textarea {
-  height: 80px;
+.contact-right .more ul{
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding-bottom:20px;
 }
-.contact .right form .button button:hover {
-  color: #2b7a78;
-  background: black;
-  font-size: 25px;
+.contact-right .more ul li{
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+.contact-right .more ul li i{
+  font-size: 15px;
+}
+.contact-right .more ul li span{
+  font-size: 12px;
 }
 .touch {
   display: flex;
@@ -677,7 +555,6 @@ width: calc(100%);
   align-items: stretch;
   gap: 0px;
   width: calc(100%);
->>>>>>> 9a0f68cfe01b2088cf913677d92bab70395af660
 }
 .touch .touch-content {
   display: flex;
@@ -1175,62 +1052,11 @@ footer .unicon i {
     font-family: "Playfair Display", serif;
     margin-bottom: 50px;
     color: white;
-<<<<<<< HEAD
-    font-size: 15px;
-}
-/*.email{
-}*/
-.email .email-content{
-    background:#fff;
-        display: inline-flex;
-        flex-wrap: wrap;
-        align-items:center;
-        justify-content:space-between;
-        width:40%;
-        border: 3px solid #2B7A78;
-        margin-left:30%;
-        padding:5px;
-        border-radius:8px;
-}
-    .email.email-content .column{
-        padding: 5px auto;
-       
-        
-    }
-    
-    .email .email-content .second{
-        background: #2B7A78;
-        border-radius: 8px;
-    }
-    .email .email-content .second .feel{
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: #fff;
-        padding-left: 5px;
-        }
-        .email .first .file input{
-            height:100%;
-            width: 100%;
-            border-radius: 2px;
-            outline: none;
-            text-decoration: none;
-            padding: 6px 10px;
-            font-size: 17px;
-            border-right: none;
-            border:#2B7A78;
-            font-family:'Playfair Display', serif;
-        }
-footer{
-    font-family:'Playfair Display', serif;
-    display:block;
-=======
     font-size: 12px;
   }
   footer {
     font-family: "Playfair Display", serif;
     display: block;
->>>>>>> 9a0f68cfe01b2088cf913677d92bab70395af660
     text-align: center;
     background: #1f252a;
     color: #fff;
