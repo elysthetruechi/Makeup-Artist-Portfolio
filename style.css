@@ -618,12 +618,17 @@ html {
 .email .email-content .main{
   width: 40%;
   margin: 50px auto;
-  border: 2px solid #000;
+  border:none;
   border-radius: 5px;
 }
 .column-first{
   padding:8px 0;
   flex-basis: 60%;
+  border: 2px solid #000;
+  border-right: none;
+  border-top-right-radius: none;
+  border-top-left-radius:5px;
+  border-bottom-left-radius: 5px;
 }
 .column-second{
   flex-basis: 40%;
@@ -631,7 +636,9 @@ html {
   background: #2b7a78;
   border:none;
   border-left: 1px solid #2b7a78;
-  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .column-second h3{
   font-family:"Playfair Display", serif;
