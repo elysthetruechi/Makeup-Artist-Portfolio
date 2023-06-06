@@ -610,43 +610,51 @@ html {
 /*.email{
 }*/
 .email .email-content {
-  background: #fff;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.email .email-content .main{
   width: 40%;
-  border: 3px solid #2b7a78;
-  margin-left: 30%;
-  padding: 5px;
-  border-radius: 8px;
+  margin: 50px auto;
+  border: 2px solid #000;
+  border-radius: 5px;
 }
-.email.email-content .column {
-  padding: 5px auto;
+.column-first{
+  padding:8px 0;
+  flex-basis: 60%;
 }
-
-.email .email-content .second {
-  background: #2b7a78;
-  border-radius: 8px;
-}
-.email .email-content .second .feel {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.column-second{
+  flex-basis: 40%;
   color: #fff;
-  padding-left: 5px;
+  background: #2b7a78;
+  border:none;
+  border-left: 1px solid #2b7a78;
+  border-top-left-radius:5px;
 }
-.email .first .file input {
-  height: 100%;
-  width: 100%;
-  border-radius: 2px;
+.column-second h3{
+  font-family:"Playfair Display", serif;
+  color:#fff;
+  align-items: center;
+  font-size: 18px;
+  margin-top:15px;
+}
+.email .contact-box{
+    background: #fff;
+    display: flex;
+    text-align: center;
+   
+}
+.email input{
+  font-family:"Playfair Display", serif;
+  width: 80%;
+  font-size: 13px;
+  border: none;
   outline: none;
-  text-decoration: none;
-  padding: 6px 10px;
-  font-size: 17px;
-  border-right: none;
-  border: #2b7a78;
-  font-family: "Playfair Display", serif;
+  margin-top: 15px;
+  color: grey;
+  text-align:start;
 }
 footer {
   font-family: "Playfair Display", serif;
@@ -769,18 +777,6 @@ footer .unicon i {
   }
 }
 @media (max-width: 991px) {
-  .email .email-content {
-    background: #fff;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
-    border: 3px solid #2b7a78;
-    margin-left: 30%;
-    padding: 5px;
-    border-radius: 8px;
-  }
   .home-icon span {
     border: 1px solid red;
     display: inline-flex;
@@ -1086,18 +1082,6 @@ footer .unicon i {
     justify-content: space-between;
   }
 }
-.email .email-content {
-  background: #fff;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 55%;
-  border: 3px solid #2b7a78;
-  margin-left: 30%;
-  padding: 5px;
-  border-radius: 8px;
-}
 @media (max-width: 425px) {
   .email .email-content .second .feel {
     font-size: 16px;
@@ -1128,18 +1112,7 @@ footer .unicon i {
     padding: 30px 23px;
     justify-content: space-between;
   }
-  .email .email-content {
-    background: #fff;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    border: 3px solid #2b7a78;
-    margin-left: 12%;
-    padding: 5px;
-    border-radius: 8px;
-  }
+
   .hue h3 {
     font-weight: 700;
     font-family: "Playfair Display", serif;
