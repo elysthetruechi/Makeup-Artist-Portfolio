@@ -187,7 +187,7 @@ section {
 }
 .gallery {
   font-family: "Playfair Display", serif;
-  background: #111;
+  /*background: #111;*/
 }
 .gallery .title {
   position: relative;
@@ -294,30 +294,17 @@ section {
   gap: 65px;
 }
 .wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 10px;
+  display: inline-grid;
+  grid-template-columns: 2fr 2fr;
+  row-gap: 5px;
+  column-gap:15px;
+  height:50%;
+  margin:50px auto;
 }
-/*.wrap{
-}*/
-.wrap1 {
-  width: 600px;
+.wrap{
+  height:50%
 }
-.wrap2 {
-  width: 350px;
-}
-.wrap3 {
-  width: 350px;
-  height: auto;
-}
-.wrap4 {
-  width: 350px;
-}
-.wrap4 img {
-  width: 500px;
-  object-fit: fill;
-}
+
 .work img {
   width: 480px;
   object-fit: cover;
@@ -330,26 +317,6 @@ section {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-}
-.services .services-content a {
-  text-align: center;
-  display: block;
-  margin: 50px auto;
-  background: #2b7a78;
-  color: #fff;
-  font-size: 25px;
-  padding: 12px 30px;
-  border-radius: 6px;
-  margin-top: 0px;
-  height: 55px;
-  border: 2px solid #2b7a78;
-  transition: all 0.3s ease;
-}
-.services .services-content a:hover {
-  background: black;
-  color: white;
-  border: 2px solid #2b7a78;
-  transition: all 0.2s ease;
 }
 .layer {
   width: 100%;
@@ -569,6 +536,7 @@ justify-content: flex-start;
   display: inline-flex;
   justify-content: stretch;
   border-radius: 1px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   background-color: black;
