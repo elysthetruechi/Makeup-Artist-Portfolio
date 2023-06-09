@@ -51,6 +51,7 @@ body {
 .navbar .menu li a:hover,
 .navbar .logo a:hover {
   color: #2b7a78;
+  font-size: 30px;
 }
 .menu-btn {
   color: #fff;
@@ -808,6 +809,18 @@ height:320px;
     width: calc(50%);
   }
 }
+@media (max-width:912px){
+  .contact .contact-content .contact-box {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .contact .contact-content .main{
+    width: 100%;
+    margin: 50px auto;
+    border: 5px solid #2b7a78;
+  }
+  
+}
 @media (max-width: 780px) {
   .email .email-content .main{
     width: 60%;
@@ -1192,12 +1205,19 @@ height:320px;
 
   .email .contact-box{
     background: #fff;
-    display: flex;
+    display:flex;
     text-align: center;   
     width: 100%;
 }
+.column-second h3{
+  font-family:"Playfair Display", serif;
+  color:#fff;
+  align-items: center;
+  font-size: 15px;
+  margin-top:22px;
+}
   input{
-    width: 90%;
+    width: 100%;
     font-size: 15px;
     border: none;
     border-bottom: 2px solid #2b7a78;
@@ -1232,6 +1252,7 @@ height:320px;
   }
   .wrapper .giv img{
     height:320px;
+    width: 100%;
   }
   .wrapper .giv{
     width: 100%;
