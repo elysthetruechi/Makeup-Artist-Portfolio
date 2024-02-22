@@ -297,7 +297,7 @@ section {
   flex-wrap: wrap;
 }
 .wrapper {
-  display: grid;
+  display:flex;
   grid-template-columns:1fr 1fr 1fr;
   gap: 1.5rem;
   padding-block: 2rem;
