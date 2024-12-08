@@ -532,34 +532,23 @@ justify-content: flex-start;
 }
 .touch .touch-content {
   display: flex;
-  background: #1f2020;
+  background: #050505;
   padding-top: 60px;
   padding-left: 81px;
   padding-right: 20px;
-  width:90vw;
+  height: 50%;
   margin-right: 0px;
 }
-.img {
-  display: inline-flex;
-  justify-content: stretch;
-  border-radius: 1px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-  margin: 0px;
-}
+
 .hue {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #040505);
-  border-radius: 10px;
+  background:#050505;
   position: absolute;
   left: 0;
   bottom: 0;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 0 40px;
@@ -568,9 +557,10 @@ justify-content: flex-start;
 .hue h3 {
   font-weight: 700;
   font-family: "Playfair Display", serif;
-  margin-top: 50px;
+  text-align: center;
   color: white;
   font-size: 40px;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -578,7 +568,6 @@ html {
 .hue p {
   font-weight: 300;
   font-family: "Playfair Display", serif;
-  margin-bottom: 50px;
   color: white;
   font-size: 15px;
 }
@@ -669,7 +658,7 @@ footer .unicon i {
   justify-content: space-between;
 }
 /*responsive*/
-@media (max-width: 1300px) {
+@media (width >= 1400px) {
   .home .max-width {
     margin-left: 0px;
   }
@@ -900,7 +889,7 @@ height:320px;
     flex-direction: row;
   }
 }
-@media (max-width: 800px) {
+@media (width >= 800px) {
   .email .email-content .main{
     width: 60%;
     margin: 50px auto;
